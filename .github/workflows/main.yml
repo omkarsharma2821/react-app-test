@@ -19,7 +19,7 @@ jobs:
         run: npm run build
 
       - name: Sync dist folder to S3
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@main
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
